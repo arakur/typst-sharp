@@ -1363,9 +1363,9 @@ module Script =
 
     let (-%) (base_: IExpr) (bot: IExpr) = MathAttach.mk base_ -% bot
 
-    let inline (!<~) (expr: IExpr) = Arg.pos expr
+    let inline (!**=) (expr: IExpr) = Arg.pos expr
 
-    let inline (<~) (name: string) (expr: IExpr) = Arg.named name expr
+    let inline ( *=* ) (name: string) (expr: IExpr) = Arg.named name expr
 
     let named name expr = Arg.named (name = Ident name) expr
 

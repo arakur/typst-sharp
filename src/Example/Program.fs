@@ -3,8 +3,8 @@ open TypstSyntax.Script
 
 let markup =
     Markup
-        [ setRule?text <& ("font" <~ str "Times New Roman") <& ("fill" <~ ii "purple")
-          setRule?heading <& ("numbering" <~ str "1.")
+        [ setRule?text <& "font" *=* str "Times New Roman" <& "fill" *=* ii "purple"
+          setRule?heading <& "numbering" *=* str "1."
           heading 1 [ tt "Our First Section" ]
           tt "A "
           emph [ tt "monad" ]
