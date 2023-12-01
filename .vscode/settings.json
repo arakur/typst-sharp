@@ -1,0 +1,13 @@
+{
+  "cSpell.words": [
+    "deparsing",
+    "emph",
+    "Parbreak"
+  ],
+  "FSharp.inlineValues.enabled": true,
+  "FSharp.externalAutocomplete": true,
+  "FSharp.enableAnalyzers": true,
+  "FSharp.addFsiWatcher": true,
+  "editor.defaultFormatter": "mhutchie.git-graph",
+  "FSharp.inlayHints.parameterNames": false
+}
