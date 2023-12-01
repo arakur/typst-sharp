@@ -1,4 +1,4 @@
-#set text(font: "Times New Roman", fill: purple)
+#set text(font: "Garamond", fill: purple)
 #set heading(numbering: "1.")
 = Our First Section
 A  _monad_  is just a monoid $

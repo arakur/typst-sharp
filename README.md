@@ -10,7 +10,7 @@ open TypstSyntax.Script
 
 let markup =
     Markup
-        [ setRule?text <& "font" *=* str "Times New Roman" <& "fill" *=* ii "purple"
+        [ setRule?text <&& [ "font" *=* str "Garamond"; "fill" *=* ii "purple" ]
           setRule?heading <& "numbering" *=* str "1."
           heading 1 [ tt "Our First Section" ]
           tt "A "
@@ -28,7 +28,7 @@ System.IO.File.WriteAllText("./sample.typ", markup |> compose Context.Markup)
 ```
 
 ```typst
-#set text(font: "Times New Roman", fill: purple)
+#set text(font: "Garamond", fill: purple)
 #set heading(numbering: "1.")
 = Our First Section
 A  _monad_  is just a monoid $
