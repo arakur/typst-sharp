@@ -4,7 +4,7 @@
 
 ## Example
 
-```fharp
+```fsharp
 open TypstSyntax
 open TypstSyntax.Script
 
